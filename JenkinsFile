@@ -1,12 +1,17 @@
-pipeline 
-	{
-		agent any
-		stages {
-			stage("One') {
-			steps {
-				echo 'Hi, this is Suganthi from NCS'
-				}
-			}
-		}
-	}
-
+pipeline
+        {
+                agent any
+                stages {
+                        stage('One') {
+                        steps {
+                                echo 'Hi, this is Suganthi from NCS'
+                                }
+                        }
+                        stage('Two')
+                        {
+                        steps {
+                                echo 'Hello Wolrd'
+                                }
+                        }
+                }
+        }
